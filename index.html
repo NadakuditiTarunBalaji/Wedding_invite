@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#641d22" />
+    <title>Anisa &amp; Naresh | Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="petals petals-left" aria-hidden="true">✦ ❁ ✦</div>
+      <div class="petals petals-right" aria-hidden="true">❁ ✦ ❁</div>
+
+      <section
+        class="language-gate"
+        id="language-gate"
+        aria-labelledby="language-title"
+      >
+        <div class="gate-card gate-ganesh-card">
+          <img class="gate-ganesh" src="ganesh.png" alt="Lord Ganesha" />
+          <p class="gate-scroll-hint">Scroll to continue</p>
+        </div>
+        <div class="gate-card language-card" id="language-card">
+          <span class="eyebrow">A sacred beginning</span>
+          <p class="gate-kicker">With love and blessings</p>
+          <h1 id="language-title">Choose your language</h1>
+          <p class="gate-subtitle">మీ భాషను ఎంచుకోండి</p>
+          <div class="language-options">
+            <button class="language-button" type="button" data-language="en">
+              <span>English</span><small>Enter invitation</small>
+            </button>
+            <button class="language-button" type="button" data-language="te">
+              <span>తెలుగు</span><small>ఆహ్వాన పత్రికలోకి ప్రవేశించండి</small>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <main class="invitation" id="invitation" hidden>
+        <header class="topbar">
+          <a class="brand" href="#ganesh" aria-label="Back to beginning">ॐ</a>
+          <button
+            class="language-switch"
+            id="language-switch"
+            type="button"
+            aria-label="Change language"
+          >
+            <span>తెలుగు</span>
+          </button>
+        </header>
+
+        <section
+          class="cinematic-stage"
+          id="cinematic-stage"
+          aria-live="polite"
+        >
+          <div class="cinematic-orbit" aria-hidden="true"></div>
+          <div class="scene scene-ganesh is-active" data-scene="0">
+            <p class="eyebrow" data-i18n="blessing">
+              With the blessings of Lord Ganesha
+            </p>
+            <div class="scene-ganesh-image">
+              <img src="ganesh.png" alt="Lord Ganesha" />
+            </div>
+            <p class="sanskrit">With love and blessings</p>
+            <p class="scene-hint" data-i18n="scrollHint">
+              Scroll gently to discover our invitation
+            </p>
+          </div>
+          <div class="scene scene-copy" data-scene="1">
+            <p class="eyebrow" data-i18n="inviteEyebrow">
+              You are warmly invited
+            </p>
+            <h1 class="scene-title" data-i18n="welcomeTitle">
+              Anisa &amp; Naresh
+            </h1>
+            <p class="scene-body" data-i18n="welcomeBody">
+              Together with their families, we invite you to share the joy of
+              the wedding of our beloved children.
+            </p>
+            <div class="names">
+              <span>Anisa</span><i>&amp;</i><span>Naresh</span>
+            </div>
+          </div>
+          <div class="scene scene-date" data-scene="2">
+            <p class="eyebrow" data-i18n="dateEyebrow">Save the date</p>
+            <p class="scene-date-number">25</p>
+            <h2 data-i18n="month">November 2026</h2>
+            <p data-i18n="day">Wednesday · 9:33 PM</p>
+            <div
+              class="countdown"
+              id="cinematic-countdown"
+              aria-live="polite"
+            ></div>
+          </div>
+          <div class="scene scene-copy" data-scene="3">
+            <p class="eyebrow" data-i18n="eventsEyebrow">
+              Programme &amp; timings
+            </p>
+            <h2 class="scene-title" data-i18n="eventsTitle">
+              Join us for this auspicious celebration
+            </h2>
+            <div class="scene-events">
+              <p>
+                <strong data-i18n="event1Title"
+                  >Pre-Wedding Lunch (Vindu)</strong
+                >
+                <span data-i18n="event1Date"
+                  >Wednesday, 25th November 2026 · 11:00 AM onwards</span
+                >
+                <span data-i18n="event1Place">Gammalapalem Colony, Kadali</span>
+              </p>
+              <p>
+                <strong data-i18n="event3Title"
+                  >Sumuhurtham (Wedding Ceremony)</strong
+                >
+                <span data-i18n="event3Date"
+                  >Wednesday, 25th November 2026 · 9:33 PM</span
+                >
+                <span data-i18n="event3Place"
+                  >Near Ramalayam, Pedapalem, Vegivaripalem</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="scene scene-copy" data-scene="4">
+            <p class="eyebrow" data-i18n="venueEyebrow">Where we meet</p>
+            <h2 class="scene-title" data-i18n="venueTitle">
+              Near Ramalayam, Pedapalem
+            </h2>
+            <p class="scene-body" data-i18n="venueBody">
+              Vegivaripalem, Andhra Pradesh
+            </p>
+            <a
+              class="outline-button"
+              href="https://www.google.com/maps/place/Ramalayam+Pedapalem/@16.4725202,81.8965197,15z/data=!4m14!1m7!3m6!1s0x3a37e7000e6b3a79:0x11a17ed2276ccaf3!2sVegivaripalem!8m2!3d16.4736226!4d81.9034359!16s%2Fg%2F11zbynfs7z!3m5!1s0x3a37e71ca21e211b:0x162daf4ac3716d8!8m2!3d16.4750625!4d81.8936875!16s%2Fg%2F11l5vmw_vg?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="directions"
+              >Get directions</a
+            >
+          </div>
+          <div class="scene scene-copy" data-scene="6">
+            <p class="eyebrow" data-i18n="closingEyebrow">
+              Your presence is our blessing
+            </p>
+            <h2 class="scene-title" data-i18n="closingTitle">
+              We look forward to celebrating with you
+            </h2>
+            <div class="names small">
+              <span>Anisa*&*Naresh</span>
+            </div>
+            <p class="sanskrit" data-i18n="weddingBlessings"></p>
+          </div>
+        </section>
+
+        <div class="legacy-content" aria-hidden="true">
+          <section class="envelope-scene" id="envelope">
+            <div class="envelope-glow" aria-hidden="true"></div>
+            <div class="envelope" aria-label="Wedding invitation envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-seal">✦</div>
+              <div class="invitation-card">
+                <span class="eyebrow" data-i18n="cardEyebrow"
+                  >A royal invitation</span
+                >
+                <p class="card-symbol">With love and blessings</p>
+                <div class="card-names">Anisa <i>&amp;</i> Naresh</div>
+                <p data-i18n="cardDate">25 November 2026</p>
+              </div>
+            </div>
+            <p class="envelope-prompt" data-i18n="envelopePrompt">
+              Scroll to open our invitation
+            </p>
+          </section>
+
+          <section class="hero" id="ganesh">
+            <div class="hero-layer hero-layer-back" aria-hidden="true"></div>
+            <div class="hero-layer hero-layer-front" aria-hidden="true"></div>
+            <div class="hero-content reveal">
+              <p class="eyebrow" data-i18n="blessing">
+                With the blessings of Lord Ganesha
+              </p>
+              <div class="ganesh-wrapper">
+                <img class="ganesh" src="ganesh.png" alt="Lord Ganesha" />
+              </div>
+              <p class="sanskrit">With love and blessings</p>
+              <p class="hero-note" data-i18n="scrollHint">
+                Scroll gently to discover our invitation
+              </p>
+              <a
+                class="scroll-cue"
+                href="#welcome"
+                aria-label="Scroll to invitation"
+                ><span></span
+              ></a>
+            </div>
+          </section>
+
+          <div class="content">
+            <section
+              class="section welcome reveal parallax-section"
+              id="welcome"
+            >
+              <p class="eyebrow" data-i18n="inviteEyebrow">
+                You are warmly invited
+              </p>
+              <h2 class="section-heading" data-i18n="welcomeTitle">
+                Two hearts, one beautiful beginning
+              </h2>
+              <p class="body-copy" data-i18n="welcomeBody">
+                With immense joy and the blessings of our families, we invite
+                you to celebrate the wedding of
+              </p>
+              <div class="names">
+                <span>Anisa</span><i>&amp;</i><span>Naresh</span>
+              </div>
+              <div class="ornament" aria-hidden="true">✦</div>
+            </section>
+
+            <section class="section date-section reveal">
+              <div class="date-card">
+                <p class="eyebrow" data-i18n="dateEyebrow">Save the date</p>
+                <p class="date-number">25</p>
+                <p class="date-month" data-i18n="month">November 2026</p>
+                <p class="date-day" data-i18n="day">Wednesday · 9:33 PM</p>
+                <div class="countdown" id="countdown" aria-live="polite"></div>
+              </div>
+            </section>
+
+            <section
+              class="section story-section reveal parallax-section"
+              id="story"
+            >
+              <p class="eyebrow" data-i18n="storyEyebrow">Our story</p>
+              <h2 class="section-heading" data-i18n="storyTitle">
+                Two souls, one beautiful journey
+              </h2>
+              <p class="body-copy" data-i18n="storyBody">
+                Where tradition meets love, a new chapter begins. Join us as we
+                celebrate the promise of togetherness.
+              </p>
+              <div class="story-ornament" aria-hidden="true">
+                <span>❈</span><i></i><span>❈</span>
+              </div>
+            </section>
+
+            <section class="section family reveal">
+              <p class="eyebrow" data-i18n="familyEyebrow">
+                With the blessings of our families
+              </p>
+              <h2 data-i18n="familyTitle">A new chapter begins</h2>
+              <div class="family-grid">
+                <article>
+                  <span data-i18n="groomChild">Son of</span
+                  ><strong
+                    >Sri Jakkamsetti Subrahmanyam<br />&amp; Smt. Ganga
+                    Bhavani</strong
+                  >
+                </article>
+                <article>
+                  <span data-i18n="brideChild">Daughter of</span
+                  ><strong
+                    >Sri Chitturi Nageswara Rao<br />&amp; Smt. Sridevi</strong
+                  >
+                </article>
+              </div>
+            </section>
+
+            <section class="section timeline-section reveal" id="events">
+              <p class="eyebrow" data-i18n="eventsEyebrow">
+                Programme &amp; timings
+              </p>
+              <h2 data-i18n="eventsTitle">
+                Join us for this auspicious celebration
+              </h2>
+              <div class="timeline">
+                <article class="event">
+                  <span class="event-icon">◈</span>
+                  <div>
+                    <p class="event-date" data-i18n="event1Date">
+                      Wednesday, 25th November 2026 · 11:00 AM onwards
+                    </p>
+                    <h3 data-i18n="event1Title">Pre-Wedding Lunch (Vindu)</h3>
+                    <p data-i18n="event1Place">Gammalapalem Colony, Kadali</p>
+                  </div>
+                </article>
+                <article class="event">
+                  <span class="event-icon">✦</span>
+                  <div>
+                    <p class="event-date" data-i18n="event3Date">
+                      Wednesday, 25th November 2026 · 9:33 PM
+                    </p>
+                    <h3 data-i18n="event3Title">
+                      Sumuhurtham (Wedding Ceremony)
+                    </h3>
+                    <p data-i18n="event3Place">
+                      Near Ramalayam, Pedapalem, Vegivaripalem
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="section venue reveal">
+              <p class="eyebrow" data-i18n="venueEyebrow">Where we meet</p>
+              <h2 data-i18n="venueTitle">Near Ramalayam, Pedapalem</h2>
+              <p class="body-copy" data-i18n="venueBody">
+                Vegivaripalem, Andhra Pradesh
+              </p>
+              <a
+                class="outline-button"
+                href="https://www.google.com/maps/place/Ramalayam+Pedapalem/@16.4725202,81.8965197,15z/data=!4m14!1m7!3m6!1s0x3a37e7000e6b3a79:0x11a17ed2276ccaf3!2sVegivaripalem!8m2!3d16.4736226!4d81.9034359!16s%2Fg%2F11zbynfs7z!3m5!1s0x3a37e71ca21e211b:0x162daf4ac3716d8!8m2!3d16.4750625!4d81.8936875!16s%2Fg%2F11l5vmw_vg?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="directions"
+                >Get directions</a
+              >
+            </section>
+
+            <footer class="section closing reveal">
+              <div class="rangoli rangoli-bottom" aria-hidden="true"></div>
+              <p class="eyebrow" data-i18n="closingEyebrow">
+                Your presence is our blessing
+              </p>
+              <h2 data-i18n="closingTitle">
+                We look forward to celebrating with you
+              </h2>
+              <div class="names small">
+                <span>Anisa</span><i>&amp;</i><span>Naresh</span>
+              </div>
+              <p class="sanskrit" data-i18n="weddingBlessings">
+                Wedding blessings
+              </p>
+              <a
+                class="outline-button closing-button"
+                href="mailto:?subject=Wedding%20RSVP&body=We%20would%20love%20to%20join%20you%20for%20this%20special%20day."
+                data-i18n="rsvpButton"
+                >RSVP by message</a
+              >
+              <a
+                class="outline-button closing-button"
+                href="mailto:?subject=Wedding%20Blessings&body=Our%20warmest%20blessings%20to%20the%20happy%20couple."
+                data-i18n="blessingsButton"
+                >Send your blessings</a
+              >
+            </footer>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
